@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    double cels,fah;
+    cout << "t(cels) = ";
+    cin >> cels;
+    fah = (cels * 9) / 5 + 32;
+    cout << "t(fah) = " << fah <<endl;
+    return 0;
+}
