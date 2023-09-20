@@ -1,0 +1,3 @@
+for (int x = 10; x > 0; x–) {
+cout << x << endl;
+}
