@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main() {
+int number = 2;
+int power = 10;
+int result = 1;
+
+while (power > 0) {
+    result *= number;
+    power--;
+}
+
+std::cout << "2 to the power 10 is: " << result << std::endl;
+
+return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main(){
+int n = 10, fact = 1; // инициализируем переменную факториала единицей
+
+while(n >= 1){
+    fact *= n; // перемножаем все числа от 1 до 10
+    n--; // уменьшаем n на 1
+}
+cout << "Факториал от 10 равен: " << fact;
+return 0;
+}
