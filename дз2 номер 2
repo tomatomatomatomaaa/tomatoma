@@ -1,0 +1,17 @@
+#include <iostream>
+#include <bitset>
+
+bool isEven(int x) {
+return (x & 1) == 0;
+}
+
+int main() {
+int x;
+std::cout << "Enter an integer: ";
+std::cin >> x;
+
+bool isEven = isEven(x);
+
+std::cout << (isEven ? "The number is even.\n" : "The number is odd.\n");
+
+return 0;
