@@ -1,16 +1,14 @@
-#include <cstdlib>
 #include <iostream>
 
-bool isPowerOfTwo(unsigned int n) {
-return n && (!(n & (n - 1)));
+int main() {
+    int x;
+    std::cout << "Введите число: ";
+    std::cin >> x;
+
+    bool powerOf2 = (x & (x - 1)) == 0;
+
+    std::cout << "Число " << x << " является степенью двойки: " << (powerOf2 ? "Да" : "Нет") << std::endl;
+
+    return 0;
 }
 
-int main() {
-unsigned int n;
-std::cin >> n;
-if (isPowerOfTwo(n)) {
-std::cout << n << " is a power of 2.\n";
-} else {
-std::cout << n << " is not a power of 2.\n";
-}
-}
