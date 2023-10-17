@@ -1,11 +1,10 @@
 #include <iostream>
-#define cubeof(X) ((X)*(X)*(X))
 
-using namespace std;
+#define cubeof(X) ((X)*(X)*(X))
 
 int main() {
     int num = 10;
     int result = cubeof(num);
-    cout << "Cube of " << num << " is " << result << endl;
+    std::cout << "Cube of " << num << " is " << result << std::endl;
     return 0;
 }
