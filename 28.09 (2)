@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int arr[] = { 500, 4, 24, 15, 100, 105 };
+int n = sizeof(arr) / sizeof(arr[0]);
+int sum_for = 0, sum_while = 0;
+
+// с помощью for
+for(int i=0; i<n; i++)
+{
+    sum_for += arr[i];
+}
+cout << "сумма for: " << sum_for << endl;
+
+// с помощью while 
+int i = 0;
+while(i < n)
+{
+    sum_while += arr[i++];
+}
+cout << "сумма while: " << sum_while << endl;
+
+return 0;
+}
