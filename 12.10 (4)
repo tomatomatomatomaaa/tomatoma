@@ -1,0 +1,24 @@
+#include <iostream>
+
+int Add(int a, int b) {
+    return a + b;
+}
+
+float Add(float a, float b) {
+    return a + b;
+}
+
+int main() {
+    int a = 9;
+    int b = 54;
+    float c = 5.6;
+    float d = 9.6;
+    
+    int result1 = Add(a, b);
+    std::cout << "Result of Add(int, int): " << result1 << std::endl;
+    
+    float result2 = Add(c, d);
+    std::cout << "Result of Add(float, float): " << result2 << std::endl;
+    
+    return 0;
+}
