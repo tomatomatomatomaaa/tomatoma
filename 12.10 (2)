@@ -1,0 +1,7 @@
+float multiplyOrAdd(float num1, float num2, bool isMultiply = true) {
+    if (isMultiply) {
+        return num1 * num2;
+    } else {
+        return num1 + num2;
+    }
+}
